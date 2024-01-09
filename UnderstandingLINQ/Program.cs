@@ -1,4 +1,4 @@
-﻿//Console.WriteLine("Hello, World!");
+﻿//Console.WriteLine("Hello, OS");
 
 namespace UnderstandingLINQ
 {
@@ -46,10 +46,10 @@ namespace UnderstandingLINQ
             }
             */
 
-            //Console.WriteLine(myCars.TrueForAll(p => p.Year > 2004));
+            Console.WriteLine(myCars.TrueForAll(p => p.Year > 2004));
 
-            //myCars.ForEach(p => p.StickerPrice -= 4000);
-            //myCars.ForEach(p => Console.WriteLine("{0} {1:C}", p.VIN, p.StickerPrice));
+            myCars.ForEach(p => p.StickerPrice -= 4000);
+            myCars.ForEach(p => Console.WriteLine("{0} {1:C}", p.VIN, p.StickerPrice));
 
             Console.WriteLine(myCars.Exists(p => p.Model == "4Runner"));
 
